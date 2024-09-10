@@ -27,7 +27,8 @@ int main () {
     d = (b*b)-(4*a*c);
     cout<<" Discriminant : "<<d<<endl<<endl;
     if (a==0&&d>=0){
-        cout<<" x : "<<d<<endl;
+        x = (-c)/b;
+        cout<<" x : "<<x<<endl;
     }
     else if (d>0) {
         cout<<" There are two distinct real roots"<<endl;
