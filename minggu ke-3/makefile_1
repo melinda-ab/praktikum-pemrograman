@@ -1,0 +1,10 @@
+all:nomor_1
+soal: nomor_1.cpp
+  g++ -o nomor_1 nomor_1.cpp
+dump: nomor_!
+  objdump -d nomor_1 > nomor_1.asm
+
+clean:
+  rm -f nomor_1 nomor_1.asm
+run: nomor_1
+  ./nomor_1
