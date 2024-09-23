@@ -1,0 +1,9 @@
+ Diskriminan dan Akar Persamaan Kuadrat
+
+        ax^2 + bx + c = 0
+
+ (2)x^2 + (1)x + (5) = 0
+
+ Diskriminan: -39
+
+ Tidak terdapat akar rill (akar imajiner)

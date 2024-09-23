@@ -1,0 +1,6 @@
+ Accumulate The Sum
+ Input number: 3
+
+0 1 2 3 
+
+ The accumulative sum is: 6

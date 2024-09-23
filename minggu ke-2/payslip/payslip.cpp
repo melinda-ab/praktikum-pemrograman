@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>  // Include fstream for file handling
 using namespace std;
 
 int main () {
@@ -6,6 +7,14 @@ int main () {
     int gross, tax, net;
     int installment, insurance;
     
+    // Open file for writing output
+    ofstream outfile("payslip.txt");  
+    
+    if(!outfile){
+        cout<<" Error opening file!"<<endl;
+        return 1;
+    }
+
     cout<<" Fixed installment and insurance amount (yes/no): ";
     cin>>yn;
     if (yn=="no"){
@@ -20,28 +29,32 @@ int main () {
     }
     cout<<endl<<endl;
     
-    
-    cout<<"        Payslip for Employee       "<<endl;
-    cout<<" =================================="<<endl;
+    outfile << "        Payslip for Employee       \n";
+    outfile << " ==================================\n";
     cout<<" Name         : ";
     cin>>name;
+    outfile << " Name         : " << name << "\n";
     cout<<" Gross Salary : Rp";
     cin>>gross;
+    outfile << " Gross Salary : Rp" << gross << "\n";
     
     tax = ((gross*20)/100);
-    cout<<" Tax(20%)     : Rp"<<tax<<endl;
-    cout<<" Installment  : Rp"<<installment<<endl;
-    cout<<" Insurance    : Rp"<<insurance<<endl;
+    outfile << " Tax(20%)     : Rp" << tax << "\n";
+    outfile << " Installment  : Rp" << installment << "\n";
+    outfile << " Insurance    : Rp" << insurance << "\n";
     
-    cout<<" ----------------------------------"<<endl;
+    outfile << " ----------------------------------\n";
     net = (gross-tax-installment-insurance);
     
-    if (net<0){
-        cout<<" Net Salary   : -Rp"<<(-net)<<endl<<endl;
-        cout<<" You are not financially stable"<<endl;
-        return 0;
+    if (net < 0) {
+        outfile << " Net Salary   : -Rp" << (-net) << "\n\n";
+        outfile << " You are not financially stable\n";
+    } else {
+        outfile << " Net Salary   : Rp" << net << "\n\n";
     }
-    else {
-        cout<<" Net Salary   : Rp"<<net<<endl<<endl;
-        return 0;}
+
+    outfile.close();    // Close the file after writing
+    cout << " Payslip has been generated in 'payslip.txt'." << endl;
+
+    return 0;
 }
