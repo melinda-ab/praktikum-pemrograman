@@ -1,11 +1,11 @@
  Quadratic Equation Solver
 
-        ax^2 + bx + c = 0
+    ax^2 + bx + c = 0
 
- (3)x^2 + (5)x + (1) = 0
+ x^2 + (5)x + (2) = 0
 
- Discriminant: 13
+ Discriminant: 17
 
  There are two distinct real roots:
- x1: -0.232408
- x2: -1.43426
+ x1: -0.438447
+ x2: -4.56155

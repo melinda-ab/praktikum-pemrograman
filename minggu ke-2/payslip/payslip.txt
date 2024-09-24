@@ -1,10 +1,10 @@
         Payslip for Employee       
  ==================================
  Name         : Mel
- Gross Salary : Rp3000000
- Tax(20%)     : Rp600000
+ Gross Salary : Rp1000000
+ Tax(20%)     : Rp200000
  Installment  : Rp200000
- Insurance    : Rp100000
+ Insurance    : Rp150000
  ----------------------------------
- Net Salary   : Rp2100000
+ Net Salary   : Rp450000
 

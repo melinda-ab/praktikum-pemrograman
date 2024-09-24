@@ -22,17 +22,18 @@ int main(){
     sum = 0;
 
     // Write output to file
-    outfile << " Accumulate The Sum\n";
-    outfile << " Input number: " << input << "\n\n";
+    outfile << " Accumulate The Sum" << endl;
+    outfile << " Input number: " << input << endl << endl;
 
     while (n <= input) {
+        outfile << " ";
         outfile << n << " ";  // Write each number to the file
         x = sum + n;
         sum = x;
         n++;
     }
 
-    outfile << "\n\n";
+    outfile << endl << endl;
     outfile << " The accumulative sum is: " << sum << endl;
 
     // Close the file after writing

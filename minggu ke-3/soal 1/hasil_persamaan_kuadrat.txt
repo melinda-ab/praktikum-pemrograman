@@ -2,8 +2,10 @@
 
         ax^2 + bx + c = 0
 
- (2)x^2 + (1)x + (5) = 0
+ (3)x^2 + (5)x + (1) = 0
 
- Diskriminan: -39
+ Diskriminan: 13
 
- Tidak terdapat akar rill (akar imajiner)
+ Terdapat dua akar rill:
+ x1: -0.232408
+ x2: -1.43426

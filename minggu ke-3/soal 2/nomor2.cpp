@@ -9,23 +9,23 @@ int main(){
     ofstream outfile("hasil_bilangan_terbesar.txt");
 
     if(!outfile){
-        cout<<" Error opening file!"<<endl;
+        cout << " Error opening file!"<<endl;
         return 1;
     }
 
-    cout<<" Menentukan Bilangan Terbesar"<<endl;
-    cout<<" Input bilangan pertama : ";
-    cin>>a;
-    cout<<" Input bilangan kedua   : ";
-    cin>>b;
-    cout<<" Input bilangan ketiga  : ";
-    cin>>c;
-    cout<<endl;
+    cout << " Menentukan Bilangan Terbesar"<<endl;
+    cout << " Input bilangan pertama : ";
+    cin >> a;
+    cout << " Input bilangan kedua   : ";
+    cin >> b;
+    cout << " Input bilangan ketiga  : ";
+    cin >> c;
+    cout << endl;
 
     outfile << " Menentukan Bilangan Terbesar\n";
-    outfile << " Input bilangan pertama : " << a << "\n";
-    outfile << " Input bilangan kedua   : " << b << "\n";
-    outfile << " Input bilangan ketiga  : " << c << "\n\n";
+    outfile << " Input bilangan pertama : " << a << endl;
+    outfile << " Input bilangan kedua   : " << b << endl;
+    outfile << " Input bilangan ketiga  : " << c << endl << endl;
     
     outfile << " Bilangan terbesar adalah ";
     if (a >= b && a >= c) {

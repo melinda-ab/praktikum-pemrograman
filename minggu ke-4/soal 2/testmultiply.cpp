@@ -12,13 +12,8 @@ int main(){
         cout << " Error opening file!"<<endl;
         return 1;
     }
-
-    cout << " Multiplication table"<<endl;
-    cout << " Input number: ";
-    cin >> input;
-    cout << endl;
-
-    x = 0;
+    
+    input = 8;
 
     // Write the header to the file
     outfile << " Multiplication table for " << input << endl << endl;

@@ -1,6 +1,6 @@
  Menentukan Bilangan Terbesar
- Input bilangan pertama : 5
- Input bilangan kedua   : 2
- Input bilangan ketiga  : 11
+ Input bilangan pertama : 1
+ Input bilangan kedua   : 4
+ Input bilangan ketiga  : 20
 
- Bilangan terbesar adalah 11
+ Bilangan terbesar adalah 20

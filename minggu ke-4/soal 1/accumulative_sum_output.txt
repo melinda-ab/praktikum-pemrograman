@@ -1,6 +1,6 @@
  Accumulate The Sum
- Input number: 3
+ Input number: 2
 
-0 1 2 3 
+ 0  1  2 
 
- The accumulative sum is: 6
+ The accumulative sum is: 3
