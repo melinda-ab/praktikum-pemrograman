@@ -24,10 +24,9 @@ int main(){
     outfile << " Multiplication table for " << input << endl << endl;
 
     // Generate and write the multiplication table to the file
-    while(x <= 10){
+    for(int x = 0; x <= 10; x++){
         multiply = input * x;
         outfile << " " << input << " x " << x << " = " << multiply << endl;
-        x++;
     }
 
     // Close the file after writing

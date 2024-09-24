@@ -25,12 +25,10 @@ int main(){
     outfile << " Accumulate The Sum" << endl;
     outfile << " Input number: " << input << endl << endl;
 
-    while (n <= input) {
-        outfile << " ";
-        outfile << n << " ";  // Write each number to the file
+    for(int n = 0; n <= input; n++) {
+        outfile << " " << n << " ";     // Write each number to the file
         x = sum + n;
         sum = x;
-        n++;
     }
 
     outfile << endl << endl;

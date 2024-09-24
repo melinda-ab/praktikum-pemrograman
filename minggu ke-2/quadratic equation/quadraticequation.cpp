@@ -26,6 +26,9 @@ int main () {
     
     outfile << " Quadratic Equation Solver" << endl << endl;
     outfile << "    ax^2 + bx + c = 0" << endl << endl;
+    outfile << " Input coefficients a : " << a << endl;
+    outfile << " Input coefficients b : " << b << endl;
+    outfile << " Input coefficients c : " << c << endl << endl;
     
     // Display equation based on the input coefficients
     if (a == 1) {

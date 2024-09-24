@@ -27,6 +27,10 @@ int main () {
     outfile << " Diskriminan dan Akar Persamaan Kuadrat" << endl << endl;
     outfile << "        ax^2 + bx + c = 0" << endl << endl;
     
+    outfile << " Input koefisien a : " << a << endl;
+    outfile << " Input koefisien b : " << b << endl;
+    outfile << " Input koefisien c : " << c << endl << endl;
+
     // Display equation based on the input coefficients
     if (a == 1) {
         outfile << " x^2 + (" << b << ")x + (" << c << ") = 0" << endl << endl;

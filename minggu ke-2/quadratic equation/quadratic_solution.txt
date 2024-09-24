@@ -2,10 +2,16 @@
 
     ax^2 + bx + c = 0
 
- x^2 + (5)x + (2) = 0
+    ax^2 + bx + c = 0
 
- Discriminant: 17
+ Input coefficients a : 6
+ Input coefficients b : 2
+ Input coefficients c : 0
+
+ (6)x^2 + (2)x + (0) = 0
+
+ Discriminant: 4
 
  There are two distinct real roots:
- x1: -0.438447
- x2: -4.56155
+ x1: 0
+ x2: -0.333333

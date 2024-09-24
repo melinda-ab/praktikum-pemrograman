@@ -1,34 +1,20 @@
 #include <iostream>
-#include <fstream>  // Include fstream for file handling
 using namespace std;
 
 int main(){
     int input, multiply, x;
-
-    // Open file for writing output
-    ofstream outfile("multiplication_table_output.txt");
-
-    if(!outfile){
-        cout << " Error opening file!"<<endl;
-        return 1;
-    }
     
     input = 8;
 
-    // Write the header to the file
-    outfile << " Multiplication table for " << input << endl << endl;
+    cout << " Multiplication table" << endl;
+    cout << " Input number: " << input << endl << endl;
 
-    // Generate and write the multiplication table to the file
-    while(x <= 10){
+    cout << " Multiplication table for " << input << endl << endl;
+
+    for(int x = 1; x <= 10; x++) {
         multiply = input * x;
-        outfile << " " << input << " x " << x << " = " << multiply << endl;
-        x++;
+        cout << " " << input << " x " << x << " = " << multiply << endl;
     }
-
-    // Close the file after writing
-    outfile.close();
-
-    cout << " Multiplication table has been saved in 'multiplication_table_output.txt'." << endl;
 
     return 0;
 }
