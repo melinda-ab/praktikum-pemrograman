@@ -1,17 +1,8 @@
 #include <iostream>
-#include <fstream>  // Include fstream for file handling
 using namespace std;
 
 int main(){
-    int a, b, c;
-
-    // Open file for writing output
-    ofstream outfile("hasil_bilangan_terbesar.txt");
-
-    if(!outfile){
-        cout << " Error opening file!"<<endl;
-        return 1;
-    }
+    int a, b, c, d;
 
     a = 5;
     b = 1;
@@ -22,24 +13,22 @@ int main(){
     cout << " Input bilangan ketiga  : " << c << endl;
     cout << endl;
 
-    outfile << " Menentukan Bilangan Terbesar\n";
-    outfile << " Input bilangan pertama : " << a << endl;
-    outfile << " Input bilangan kedua   : " << b << endl;
-    outfile << " Input bilangan ketiga  : " << c << endl << endl;
-    
-    outfile << " Bilangan terbesar adalah ";
     if (a >= b && a >= c) {
-        outfile << a;
+        d = a;
     } else if (b >= a && b >= c) {
-        outfile << b;
+        d = b;
     } else {
-        outfile << c;
+        d = c;
     }
-
-    // Close the file after writing
-    outfile.close();
     
-    cout << " Hasil telah disimpan di 'hasil_bilangan_terbesar.txt'." << endl;
+    cout << " Bilangan terbesar adalah " << d << endl << endl;
 
+    int expectedd = 9;
+
+    if (expectedd==d) {
+        cout << " Test Berhasil!" << endl;
+    } else{
+        cout << " Test Gagal!" << endl;
+    }
     return 0;
 }

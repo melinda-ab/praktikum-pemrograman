@@ -22,7 +22,7 @@ int main(){
     cin >> c;
     cout << endl;
 
-    outfile << " Menentukan Bilangan Terbesar\n";
+    outfile << " Menentukan Bilangan Terbesar" << endl;
     outfile << " Input bilangan pertama : " << a << endl;
     outfile << " Input bilangan kedua   : " << b << endl;
     outfile << " Input bilangan ketiga  : " << c << endl << endl;
@@ -38,7 +38,7 @@ int main(){
 
     // Close the file after writing
     outfile.close();
-    
+
     cout << " Hasil telah disimpan di 'hasil_bilangan_terbesar.txt'." << endl;
 
     return 0;

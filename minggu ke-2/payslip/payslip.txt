@@ -1,10 +1,11 @@
         Payslip for Employee       
  ==================================
  Name         : Melinda
- Gross Salary : Rp1300000
- Tax(20%)     : Rp260000
- Installment  : Rp70000
- Insurance    : Rp30000
+ Gross Salary : Rp1000
+ Tax(20%)     : Rp200
+ Installment  : Rp30000
+ Insurance    : Rp500000
  ----------------------------------
- Net Salary   : Rp940000
+ Net Salary   : -Rp529200
 
+ You are not financially stable

@@ -2,16 +2,12 @@
 
     ax^2 + bx + c = 0
 
-    ax^2 + bx + c = 0
-
- Input coefficients a : 6
+ Input coefficients a : 5
  Input coefficients b : 2
- Input coefficients c : 0
+ Input coefficients c : 3
 
- (6)x^2 + (2)x + (0) = 0
+ (5)x^2 + (2)x + (3) = 0
 
- Discriminant: 4
+ Discriminant: -56
 
- There are two distinct real roots:
- x1: 0
- x2: -0.333333
+ There are no real roots (complex roots)

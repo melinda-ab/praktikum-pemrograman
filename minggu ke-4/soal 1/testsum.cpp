@@ -18,7 +18,15 @@ int main(){
         sum = x;
     }
     cout << endl << endl;
-    cout << " The accumulative sum is: " << sum << endl;
+    cout << " The accumulative sum is: " << sum << endl << endl;
+
+    int expectedsum = 10;
+
+    if (expectedsum==sum) {
+        cout << " Test Passed!" << endl;
+    } else{
+        cout << " Test Failed!" << endl;
+    }
 
     return 0;
 }

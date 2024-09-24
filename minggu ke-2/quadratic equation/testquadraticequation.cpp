@@ -31,21 +31,29 @@ int main () {
  
     if (a == 0 && d >= 0) {
         x = (-c) / b;
-        cout << " There is one real root (linear equation):" << endl;
+        cout << " There is one real root (linear equation):" << endl << endl;
         cout << " x: " << x  << endl;
     } else if (d > 0) {
-        cout << " There are two distinct real roots:" << endl;
+        cout << " There are two distinct real roots:" << endl << endl;
         x1 = ((-b) + sqrt(d)) / (2 * a);
         x2 = ((-b) - sqrt(d)) / (2 * a);
         cout << " x1: " << x1 << endl;
         cout << " x2: " << x2 << endl;
     } else if (d == 0) {
-        cout << " There is exactly one real root:" << endl;
+        cout << " There is exactly one real root:" << endl << endl;
         x = (-b) / (2 * a);
         cout << " x: " << x << endl;
     } else {
-        cout << " There are no real roots (complex roots)" << endl;
+        cout << " There are no real roots (complex roots)" << endl << endl;
     }
     
+    int expectedd = -12;
+
+    if (expectedd==d) {
+        cout << " Test Passed!" << endl;
+    } else{
+        cout << " Test Failed!" << endl;
+    }
+
     return 0;
 }

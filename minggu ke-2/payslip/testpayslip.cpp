@@ -43,6 +43,14 @@ int main () {
         cout << " Net Salary   : Rp" << net << endl << endl;
     }
 
+    int expectedtax = 1000000;
+    int expecteednet = 3650000;
+
+    if (expectedtax==tax && expecteednet==net) {
+        cout << " Test Passed!" << endl;
+    } else{
+        cout << " Test Failed!" << endl;
+    }
 
     return 0;
 }

@@ -1,6 +1,6 @@
  Menentukan Bilangan Terbesar
- Input bilangan pertama : 5
- Input bilangan kedua   : 1
- Input bilangan ketiga  : 9
+ Input bilangan pertama : 2
+ Input bilangan kedua   : 51
+ Input bilangan ketiga  : 0
 
- Bilangan terbesar adalah 9
+ Bilangan terbesar adalah 51

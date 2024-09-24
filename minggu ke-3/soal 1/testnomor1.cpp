@@ -7,7 +7,7 @@ int main () {
     float d, x1, x2, x;
 
     a = 1;
-    b = 2;
+    b = 4;
     c = 4;
     cout << " Diskriminan dan Akar Persamaan Kuadrat"<<endl<<endl;
     cout << "        ax^2+bx+c=0       "<<endl<<endl;
@@ -22,8 +22,7 @@ int main () {
     } else if (a == 0) {
         cout << " (" << b << ")x + (" << c << ") = 0" << endl << endl;
     } else {
-        cout << " (" << a << ")x^2 + (" << b << ")x + (" << c << ") = 0" << endl << endl;
-    }
+        cout << " (" << a << ")x^2 + (" << b << ")x + (" << c << ") = 0" << endl << endl;}
 
     d = (b * b) - (4 * a * c);
     cout << " Diskriminan: " << d << endl << endl;
@@ -31,20 +30,29 @@ int main () {
     if (a == 0 && d >= 0) {
         x = (-c) / b;
         cout << " Persamaan linier, akarnya adalah:" << endl;
-        cout << " x: " << x << endl;
+        cout << " x: " << x << endl << endl;
     } else if (d > 0) {
         cout << " Terdapat dua akar rill:" << endl;
         x1 = ((-b) + sqrt(d)) / (2 * a);
         x2 = ((-b) - sqrt(d)) / (2 * a);
-        cout << " x1: " << x1 << endl;
-        cout << " x2: " << x2 << endl;
+        cout << " x1: " << x1 << endl << endl;
+        cout << " x2: " << x2 << endl << endl;
     } else if (d == 0) {
         cout << " Hanya terdapat satu akar rill atau akar kembar:" << endl;
         x = (-b) / (2 * a);
-        cout << " x: " << x << endl;
+        cout << " x: " << x << endl << endl;
     } else {
         cout << " Tidak terdapat akar rill (akar imajiner)" << endl;
     }
 
+    int expectedd = 0;
+    int expectedx = -2;
+
+    if (expectedd==d&&expectedx==x) {
+        cout << " Test Berhasil!" << endl;
+    } else{
+        cout << " Test Gagal!" << endl;
+    }
+    
     return 0;
 }

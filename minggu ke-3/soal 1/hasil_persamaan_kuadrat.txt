@@ -2,12 +2,13 @@
 
         ax^2 + bx + c = 0
 
- Input koefisien a : 7
- Input koefisien b : 2
- Input koefisien c : 1
+ Input koefisien a : 1
+ Input koefisien b : 4
+ Input koefisien c : 4
 
- (7)x^2 + (2)x + (1) = 0
+ x^2 + (4)x + (4) = 0
 
- Diskriminan: -24
+ Diskriminan: 0
 
- Tidak terdapat akar rill (akar imajiner)
+ Hanya terdapat satu akar rill atau akar kembar:
+ x: -2
