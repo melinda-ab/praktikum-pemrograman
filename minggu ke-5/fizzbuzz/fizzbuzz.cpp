@@ -15,7 +15,7 @@ int main(){
             a.push_back(to_string(i));
         }
     }
-    for (int i=0; a.size(); i++){
+    for (int i=0; i<a.size(); i++){
         cout<<" "<<a[i];
         if ((i+1)%10==0){
             cout<<endl;
