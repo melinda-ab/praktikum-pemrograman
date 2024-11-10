@@ -4,7 +4,7 @@ rata : rata.o
 
 # Target to compile the object file
 rata.o : rata.cpp
-	g++ -c rata.cpp -o rata.o
+	g++ -c rata.cpp -o rata
 
 # Target to run the program
 run : rata

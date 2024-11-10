@@ -1,0 +1,45 @@
+Data diurutkan berdasarkan NISN:
+NISN:    9950310962
+Nama:    Ronaldo Valentino Uneputty
+Values:  80
+NISN:    9952382180
+Nama:    Ari Lutfianto
+Values:  65
+NISN:    9960312699
+Nama:    Handi Ramadhan
+Values:  90
+NISN:    9963959682
+Nama:    Rio Alfandra
+Values:  55
+NISN:    9965653989
+Nama:    Arief Budiman
+Values:  60
+NISN:    9970272750
+Nama:    Achmad Yaumil Fadjri R.
+Values:  60
+NISN:    9970293945
+Nama:    Alivia Rahma Pramesti
+Values:  70
+
+Data diurutkan berdasarkan Values:
+Values:  55
+Nama:    Rio Alfandra
+NISN:    9963959682
+Values:  60
+Nama:    Arief Budiman
+NISN:    9965653989
+Values:  60
+Nama:    Achmad Yaumil Fadjri R.
+NISN:    9970272750
+Values:  65
+Nama:    Ari Lutfianto
+NISN:    9952382180
+Values:  70
+Nama:    Alivia Rahma Pramesti
+NISN:    9970293945
+Values:  80
+Nama:    Ronaldo Valentino Uneputty
+NISN:    9950310962
+Values:  90
+Nama:    Handi Ramadhan
+NISN:    9960312699
