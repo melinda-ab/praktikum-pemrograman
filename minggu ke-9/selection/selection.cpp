@@ -50,18 +50,14 @@ int main(){
     selectionsortnisn(data, n);
     cout << "Data diurutkan berdasarkan NISN:" << endl;
     for (int i = 0; i < n; i++) {
-        cout<<"NISN:    "<<data[i].nisn<<endl;
-        cout<<"Nama:    "<<data[i].nama<<endl;
-        cout<<"Values:  "<<data[i].values<<endl;
+        cout<<data[i].nisn<<" | "<<data[i].values<<" | "<<data[i].nama<<endl;
     }
 
     cout<<endl;
     selectionsortvalues(data, n);
     cout << "Data diurutkan berdasarkan Values:" << endl;
     for (int i = 0; i < n; i++) {
-        cout<<"Values:  "<<data[i].values<<endl;
-        cout<<"Nama:    "<<data[i].nama<<endl;
-        cout<<"NISN:    "<<data[i].nisn<<endl;
+        cout<<data[i].values<<" | "<<data[i].nisn<<" | "<<data[i].nama<<endl;
     }
     return 0;
 }
