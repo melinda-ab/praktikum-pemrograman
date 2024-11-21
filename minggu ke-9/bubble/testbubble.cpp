@@ -39,15 +39,16 @@ void testcase(const vector<string>& sorted, const string& filename) {
     inputfile.close();
 }
 
-void insertionsortnisn(mahasiswa data[],int n){
-    for (int i = 1; i < n; i++) {
-        mahasiswa key = data[i];
-        int j = i - 1;
-        while (j >= 0 && data[j].nisn > key.nisn) {
-            data[j + 1] = data[j];
-            j = j - 1;
+void bubblesortnisn(mahasiswa data[],int n){
+    mahasiswa t;
+    for(int i=0;i<=n-1;i++){
+        for (int j=0;j<=(n-2);j++){
+            if (data[j].nisn > data [j+1].nisn){
+                t=data[j];
+                data[j]=data[j+1];
+                data[j+1]=t;
+            }
         }
-        data[j + 1] = key;
     }
     vector<string>nisn;
     for (int i = 0; i < n; i++) {
@@ -58,15 +59,17 @@ void insertionsortnisn(mahasiswa data[],int n){
     testcase(nisn, "nisn.txt");
 }
 
-void insertionsortvalues(mahasiswa data[],int n){
-    for (int i = 1; i < n; i++) {
-        mahasiswa key = data[i];
-        int j = i - 1;
-        while (j >= 0 && data[j].values > key.values) {
-            data[j + 1] = data[j];
-            j = j - 1;
+void bubblesortvalues(mahasiswa data[],int n){
+    mahasiswa t;
+    for(int i=0;i<=n-1;i++){
+        for (int j=0;j<=(n-2);j++){
+            if (data[j].values > data [j+1].values ||
+             (data[j].values == data [j+1].values && data[j].nisn > data [j+1].nisn)){
+                t=data[j];
+                data[j]=data[j+1];
+                data[j+1]=t;
+            }
         }
-        data[j + 1] = key;
     }
     vector<string>values;
     for (int i = 0; i < n; i++) {
@@ -88,10 +91,11 @@ int main(){
         {"9965653989", "Arief Budiman", 60}
     };
     int n = sizeof(data) / sizeof(data[0]);
-
+    
     cout << "Data diurutkan berdasarkan NISN: ";
-    insertionsortnisn(data, n);
+    bubblesortnisn(data, n);
     cout << "Data diurutkan berdasarkan Values: ";    
-    insertionsortvalues(data,n);
+    bubblesortvalues(data, n);
+    
     return 0;
 }

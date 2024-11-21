@@ -1,0 +1,24 @@
+ Proses Binary Search
+ Check Value: 9963959682 pada index 3
+ Target value lebih besar. Bergeser ke kanan.
+ Check Value: 9970272750 pada index 5
+
+ Murid ditemukan
+ Value: 60
+ NISN: 9970272750
+ Name: Achmad Yaumil Fadjri R.
+
+ Mengubah Nama Murid Menjadi Joko
+ Value: 60
+ NISN: 9970272750
+ Name: Joko
+
+ Murid ditemukan
+ Value: 60
+ NISN: 9965653989
+ Name: Arief Budiman
+
+ Mengubah Nama Murid Menjadi Joko
+ Value: 60
+ NISN: 9965653989
+ Name: Joko

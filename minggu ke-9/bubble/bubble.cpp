@@ -25,7 +25,7 @@ void bubblesortvalues(mahasiswa data[],int n){
     for(int i=0;i<=n-1;i++){
         for (int j=0;j<=(n-2);j++){
             if (data[j].values > data [j+1].values ||
-             (data[j].values == data [j+1].values && data[j].nisn < data [j+1].nisn)){
+             (data[j].values == data [j+1].values && data[j].nisn > data [j+1].nisn)){
                 t=data[j];
                 data[j]=data[j+1];
                 data[j+1]=t;

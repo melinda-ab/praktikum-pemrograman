@@ -7,7 +7,7 @@ struct mahasiswa{
     float values;
 };
 
-void binarysearchnisn(mahasiswa data[],int n){
+void bubblesortnisn(mahasiswa data[],int n){
     mahasiswa t;
     for(int i=0;i<=n-1;i++){
         for (int j=0;j<=(n-2);j++){
@@ -20,18 +20,30 @@ void binarysearchnisn(mahasiswa data[],int n){
     }
 }
 
-void bubblesortvalues(mahasiswa data[],int n){
-    mahasiswa t;
-    for(int i=0;i<=n-1;i++){
-        for (int j=0;j<=(n-2);j++){
-            if (data[j].values > data [j+1].values ||
-             (data[j].values == data [j+1].values && data[j].nisn < data [j+1].nisn)){
-                t=data[j];
-                data[j]=data[j+1];
-                data[j+1]=t;
-            }
+void binarysearch(mahasiswa data[],int n, string target){
+    int left=0, right=n-1, mid;
+    bool found = false;
+
+    cout<<" Proses Binary Search"<<endl;
+    while(left <= right){
+        mid=(left+right)/2;
+        cout<<" Check NISN: "<<data[mid].nisn<<" pada index "<<mid<<endl;
+        if(data[mid].nisn == target){
+            cout<<endl;
+            cout<<" Murid ditemukan"<<endl;
+            cout<<" NISN: "<<data[mid].nisn<<endl;
+            cout<<" Value: "<<data[mid].values<<endl;
+            cout<<" Name: "<<data[mid].nama<<endl;
+            found=true;
+            break;
+        } else if(data[mid].nisn<target){
+            cout<<" Target NISN lebih besar. Bergeser ke kanan."<<endl;
+            left=mid+1;
+        } else{
+            cout<<" Target NISN lebih kecil. Bergeser ke kiri."<<endl;
+            right=mid-1;
         }
-    }
+    }    
 }
 
 int main(){
@@ -45,14 +57,10 @@ int main(){
         {"9965653989", "Arief Budiman", 60}
     };
     int n = sizeof(data) / sizeof(data[0]);
-    
-    bubblesortnisn(data, n);
-    cout << "Data diurutkan berdasarkan NISN:" << endl;
-    for (int i = 0; i < n; i++) {
-        cout<<"NISN:    "<<data[i].nisn<<endl;
-        cout<<"Nama:    "<<data[i].nama<<endl;
-        cout<<"Values:  "<<data[i].values<<endl;
-    }
 
+    bubblesortnisn(data, n);
+    string target = "9950310962";
+    binarysearch(data, n, target);
+    
     return 0;
 }

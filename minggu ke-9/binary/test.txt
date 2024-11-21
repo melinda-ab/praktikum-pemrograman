@@ -1,0 +1,11 @@
+ Proses Binary Search
+ Check NISN: 9963959682 pada index 3
+ Target NISN lebih kecil. Bergeser ke kiri.
+ Check NISN: 9952382180 pada index 1
+ Target NISN lebih kecil. Bergeser ke kiri.
+ Check NISN: 9950310962 pada index 0
+
+ Murid ditemukan
+ NISN: 9950310962
+ Value: 80
+ Name: Ronaldo Valentino Uneputty
