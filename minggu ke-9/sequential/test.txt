@@ -1,7 +1,8 @@
- Proses Binary Search
- Check Value: 9963959682 pada index 3
- Target value lebih besar. Bergeser ke kanan.
- Check Value: 9970272750 pada index 5
+ Proses Sequential Search
+ Check Value: 90 pada index 0
+ Check Value: 55 pada index 1
+ Check Value: 80 pada index 2
+ Check Value: 60 pada index 3
 
  Murid ditemukan
  Value: 60
@@ -12,6 +13,9 @@
  Value: 60
  NISN: 9970272750
  Name: Joko
+ Check Value: 70 pada index 4
+ Check Value: 65 pada index 5
+ Check Value: 60 pada index 6
 
  Murid ditemukan
  Value: 60
